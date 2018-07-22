@@ -13,16 +13,16 @@ int main()
 	stack* p;
 
 	FILE *mf;
-	printf("Открытие файла : ");
+	printf("Opening the file: ");
 	mf = fopen("test.txt", "r");
 
 	if (mf == NULL)
 	{
-		printf("ошибка\n");
+		printf("Error\n");
 		return -1;
 	}
 	else
-		printf("выполнено\n");
+		printf("Done\n");
 
 	create(&p);
 
@@ -57,7 +57,7 @@ int main()
 
 	}
 	if (flag != 0 && flag != 2 && p == NULL)
-		printf("Формула верна\n");
+		printf("Formula is correct!\n");
 	else
-		printf("Формула не верна\n");
+		printf("Formula is't correct!\n");
 }
