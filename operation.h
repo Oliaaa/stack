@@ -13,15 +13,14 @@ void create(stack** st)
 	*st = NULL;
 }
 
-int empty(stack* st)						//Проверка на пустоту
-{
+int empty(stack* st)						
 	if (!st)
 		return 0;
 	else
 		return 1;
 }
 
-stack * pushdstack(char x, stack *st)			//Положить в стек
+stack * pushdstack(char x, stack *st)			
 {
 	stack * r;
 	r = new stack;
@@ -29,7 +28,7 @@ stack * pushdstack(char x, stack *st)			//Положить в стек
 	r->next = st;
 	return r;
 }
-int popdstack(char * x, stack **st)			//Взять из стека
+int popdstack(char * x, stack **st)			
 {
 	stack * r;
 	if (*st)
@@ -43,7 +42,7 @@ int popdstack(char * x, stack **st)			//Взять из стека
 	return 0;
 }
 
-stack* printSt(stack* st)				//Показать содержимое стека
+stack* printSt(stack* st)				
 {
 	char x;
 
